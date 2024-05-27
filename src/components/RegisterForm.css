@@ -1,0 +1,151 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px; /* Ajusta el ancho del formulario */
+    background-color: white; /* Fondo blanco */
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Añade bordes redondeados */
+    margin: 20px; /* Añade un margen para que no toque los bordes de la pantalla */
+  }
+  
+  .logo img {
+    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-bottom: 20px;
+  }
+  
+  form {
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .register-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #295b4a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .social-login {
+    display: flex; /* Cambio a flex */
+    justify-content: space-between; /* Espacio entre los botones */
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .social-login button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 0; /* Quitar margen inferior */
+    width: 48%; /* Ajusta el ancho de los botones */
+    cursor: pointer;
+  }
+  
+  .google-btn {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: rgb(0, 0, 0);
+  }
+  
+  .facebook-btn {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: rgb(0, 0, 0);
+  }
+  
+  .terms, .login-link {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .terms a, .login-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para el div extra */
+  .extra-space {
+    flex: 1; /* Toma el espacio restante disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .landscape-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  /* Media Queries para responsividad */
+  @media (max-width: 1024px) {
+    .main-container {
+      flex-direction: column;
+    }
+  
+    .register-container {
+      width: 80%;
+      margin: 10px; /* Ajusta el margen en pantallas pequeñas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .register-container {
+      width: 100%;
+      margin: 10px; /* Ajusta el margen en pantallas pequeñas */
+    }
+  
+    .social-login {
+      flex-direction: column; /* Poner los botones en una columna en pantallas pequeñas */
+    }
+  
+    .social-login button {
+      width: 100%;
+      margin-bottom: 10px; /* Añadir margen inferior entre los botones en pantallas pequeñas */
+    }
+  
+    .extra-space {
+      margin-top: 20px; /* Añade margen superior en pantallas pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .register-container {
+      padding: 15px;
+    }
+  
+    .logo img {
+      width: 80px; /* Ajustar el tamaño del logo en pantallas más pequeñas */
+    }
+  }
+  
+ 
